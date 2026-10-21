@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080909">
+  <meta name="description" content="AD_LUXE — Une nouvelle adresse pour l'élégance. Ouverture le 4 novembre 2026 à 10h30 à Maârif, Casablanca.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="AD_LUXE — Ouverture officielle | 04.11.2026">
+  <meta property="og:description" content="L'élégance a une nouvelle adresse. Rendez-vous le 4 novembre 2026 à 10h30 à Maârif, Casablanca.">
+  <title>AD_LUXE — Ouverture officielle | 04.11.2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --night:#080909; --dark:#0e0d0a; --gold:#ceab6b; --lightgold:#f5dfae; --ivory:#f3ead9; --mute:#a99e89; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--night); color:var(--ivory); font-family:Montserrat,Arial,sans-serif; overflow-x:hidden; }
+    button,a { -webkit-tap-highlight-color:transparent; }
+    a { color:inherit; }
+    a:focus-visible,button:focus-visible { outline:2px solid var(--lightgold); outline-offset:5px; }
+    .grains { position:fixed; inset:0; pointer-events:none; z-index:8; opacity:.15; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.25'/%3E%3C/svg%3E"); }
+    .ambient { position:fixed; inset:0; background:radial-gradient(ellipse at 50% 40%,rgba(108,72,28,.16),transparent 56%),radial-gradient(ellipse at 50% 100%,rgba(111,78,31,.09),transparent 55%); pointer-events:none; }
+    .topbar { position:absolute; top:0; left:0; right:0; z-index:5; display:flex; justify-content:space-between; align-items:center; padding:27px clamp(24px,6vw,95px); }
+    .brand-small { color:var(--gold); font:500 21px 'Cormorant Garamond',serif; letter-spacing:.16em; text-decoration:none; }
+    .music { cursor:pointer; border:1px solid rgba(206,171,107,.42); border-radius:100px; padding:12px 18px; background:rgba(10,10,10,.67); color:var(--lightgold); font:500 10px Montserrat,sans-serif; letter-spacing:.14em; transition:background .25s,border-color .25s; }
+    .music:hover { background:rgba(206,171,107,.12); border-color:var(--gold); }
+    .hero { position:relative; min-height:100svh; display:flex; justify-content:center; align-items:center; text-align:center; padding:115px 20px 80px; isolation:isolate; }
+    .halo { position:absolute; width:min(65vw,560px); aspect-ratio:1; border:1px solid rgba(206,171,107,.16); border-radius:50%; box-shadow:0 0 0 55px rgba(206,171,107,.015),0 0 0 115px rgba(206,171,107,.012),0 0 130px rgba(206,171,107,.035); z-index:-1; animation:breathe 8s ease-in-out infinite; }
+    .halo:before { content:""; position:absolute; inset:14%; border:1px solid rgba(206,171,107,.08); border-radius:50%; }
+    .content { animation:rise 1.6s ease both; width:min(100%,890px); }
+    .eyebrow { color:var(--gold); font-size:10px; font-weight:500; letter-spacing:.38em; text-transform:uppercase; margin:0 0 25px; }
+    h1 { margin:0; font:300 clamp(4.5rem,14vw,11rem)/.9 'Cormorant Garamond',Georgia,serif; letter-spacing:.07em; background:linear-gradient(100deg,#896536 0%,#f8e7b9 28%,#b58745 48%,#f9e9bd 67%,#977144 100%); background-size:230% 100%; color:transparent; -webkit-background-clip:text; background-clip:text; animation:glimmer 9s linear infinite; }
+    .thin-rule { height:1px; width:85px; background:linear-gradient(90deg,transparent,var(--gold),transparent); margin:29px auto 27px; }
+    .subhead { font:400 clamp(1.7rem,4.7vw,3.1rem)/1.15 'Cormorant Garamond',Georgia,serif; margin:0 0 15px; }
+    .blurb { margin:0 auto; max-width:570px; font-size:11px; font-weight:300; line-height:2.2; letter-spacing:.09em; color:var(--mute); }
+    .opening { margin:38px 0 11px; font-size:10px; letter-spacing:.4em; color:var(--gold); font-weight:600; }
+    .date { font:400 clamp(1.45rem,3vw,2.25rem) 'Cormorant Garamond',serif; letter-spacing:.09em; margin:0 0 25px; }
+    .countdown { display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(7px,2vw,16px); max-width:555px; margin:0 auto; }
+    .unit { border:1px solid rgba(206,171,107,.28); padding:16px 5px 14px; background:rgba(25,22,18,.44); }
+    .number { display:block; font:400 clamp(1.7rem,5.5vw,3rem) 'Cormorant Garamond',serif; color:var(--lightgold); font-variant-numeric:tabular-nums; line-height:1; }
+    .unit small { display:block; font-size:8px; font-weight:500; letter-spacing:.13em; color:var(--mute); margin-top:9px; }
+    .links { display:flex; justify-content:center; align-items:center; flex-wrap:wrap; gap:12px; margin:30px auto 0; }
+    .link { display:inline-flex; justify-content:center; align-items:center; padding:15px 21px; min-height:46px; border:1px solid rgba(206,171,107,.52); text-decoration:none; font-size:9px; letter-spacing:.14em; font-weight:500; text-transform:uppercase; transition:.25s ease; }
+    .link:hover { background:var(--gold); color:var(--night); transform:translateY(-2px); }
+    .link.primary { background:linear-gradient(115deg,#c09a57,#edd69b); color:#17120b; border-color:transparent; }
+    .link.primary:hover { background:var(--lightgold); }
+    .place { margin:30px 0 0; color:var(--mute); font-size:10px; letter-spacing:.18em; }
+    .place a { text-decoration:none; border-bottom:1px solid rgba(206,171,107,.5); padding-bottom:5px; }
+    .place a:hover { color:var(--lightgold); }
+    .footer { position:relative; text-align:center; padding:10px 20px 30px; color:#8a7a60; font-size:9px; letter-spacing:.16em; }
+    .sparkle { position:absolute; display:block; width:2px; height:2px; border-radius:50%; background:var(--lightgold); opacity:0; pointer-events:none; animation:twinkle var(--dur) ease-in-out infinite; animation-delay:var(--delay); }
+    @keyframes glimmer { to { background-position:230% center; } }
+    @keyframes rise { from { opacity:0; transform:translateY(35px); } to { opacity:1; transform:translateY(0); } }
+    @keyframes breathe { 50% { transform:scale(1.045); opacity:.65; } }
+    @keyframes twinkle { 0%,100% { opacity:0; transform:translateY(6px); } 50% { opacity:.7; transform:translateY(-7px); } }
+    @media(max-width:600px) { .topbar { padding:20px; } .brand-small { font-size:18px; } .music { padding:10px 12px; font-size:9px; } h1 { font-size:clamp(3.8rem,18vw,6rem); letter-spacing:.03em; } .eyebrow { font-size:8px; letter-spacing:.23em; } .hero { padding:100px 20px 40px; } .halo { width:95vw; } .blurb { font-size:10px; } .unit small { font-size:7px; letter-spacing:.04em; } .link { flex:1 1 42%; padding:14px 10px; } .links { max-width:370px; } .place { line-height:2; } }
+    @media(prefers-reduced-motion:reduce) { *,*:before,*:after { animation:none!important; scroll-behavior:auto!important; } }
+  </style>
+</head>
+<body>
+  <div class="grains" aria-hidden="true"></div>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand-small" href="https://ad-luxe.ma" target="_blank" rel="noopener noreferrer" aria-label="Visiter AD_LUXE">AD_LUXE</a>
+    <button id="musicToggle" class="music" type="button" aria-pressed="false" aria-label="Activer la musique piano">♫ PIANO OFF</button>
+  </header>
+  <main class="hero">
+    <div class="halo" aria-hidden="true"></div>
+    <div class="content">
+      <p class="eyebrow">Une nouvelle histoire de style commence</p>
+      <h1>AD_LUXE</h1>
+      <div class="thin-rule" aria-hidden="true"></div>
+      <h2 class="subhead">L'élégance a une nouvelle adresse.</h2>
+      <p class="blurb">Des pièces choisies avec soin. Une vision singulière du style.<br>Nous avons le plaisir de vous annoncer notre ouverture officielle.</p>
+      <p class="opening">OUVERTURE OFFICIELLE</p>
+      <p class="date">04 Novembre 2026 · 10h30</p>
+      <div class="countdown" id="countdown" role="timer" aria-label="Compte à rebours avant l'ouverture">
+        <div class="unit"><span class="number" id="days">--</span><small>JOURS</small></div>
+        <div class="unit"><span class="number" id="hours">--</span><small>HEURES</small></div>
+        <div class="unit"><span class="number" id="minutes">--</span><small>MINUTES</small></div>
+        <div class="unit"><span class="number" id="seconds">--</span><small>SECONDES</small></div>
+      </div>
+      <nav class="links" aria-label="Nos liens officiels">
+        <a class="link primary" href="https://ad-luxe.ma" target="_blank" rel="noopener noreferrer">Site officiel ↗</a>
+        <a class="link" href="https://wa.me/212644162453" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+        <a class="link" href="https://www.instagram.com/ad_luxe.ma" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+      </nav>
+      <p class="place">⌖ <a href="https://www.google.com/maps/search/?api=1&query=Maarif%2C%20Casablanca%2C%20Morocco" target="_blank" rel="noopener noreferrer">MAÂRIF · CASABLANCA, MAROC ↗</a></p>
+    </div>
+  </main>
+  <footer class="footer">© 2026 AD_LUXE · THE ART OF ELEGANCE</footer>
+  <script>
+    // The opening is 10:30 local Casablanca time on 4 Nov 2026 (UTC+01:00).
+    const target = Date.parse("2026-11-04T10:30:00+01:00");
+    const pad = n => String(n).padStart(2, "0");
+    const fields = {
+      days: document.getElementById("days"),
+      hours: document.getElementById("hours"),
+      minutes: document.getElementById("minutes"),
+      seconds: document.getElementById("seconds")
+    };
+    function updateCountdown() {
+      const remaining = Math.max(0, Math.floor((target - Date.now()) / 1000));
+      fields.days.textContent = pad(Math.floor(remaining / 86400));
+      fields.hours.textContent = pad(Math.floor((remaining % 86400) / 3600));
+      fields.minutes.textContent = pad(Math.floor((remaining % 3600) / 60));
+      fields.seconds.textContent = pad(remaining % 60);
+      if (remaining === 0) {
+        document.querySelector(".opening").textContent = "NOUS SOMMES OUVERTS";
+        document.querySelector(".subhead").textContent = "Bienvenue chez AD_LUXE.";
+      }
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      const hero = document.querySelector(".hero");
+      for (let i=0; i<34; i++) {
+        const e=document.createElement("span");
+        e.className="sparkle";
+        e.style.left=(Math.random()*100)+"%";
+        e.style.top=(Math.random()*100)+"%";
+        e.style.setProperty("--dur",(3+Math.random()*6)+"s");
+        e.style.setProperty("--delay",(-Math.random()*8)+"s");
+        hero.appendChild(e);
+      }
+    }
+
+    // Tiny self-contained piano-like melody; no downloadable audio file needed.
+    // Playback only starts on a visitor click, respecting browser autoplay rules.
+    const musicBtn = document.getElementById("musicToggle");
+    let context, timer, playing=false, step=0, master;
+    const notes = [
+      [261.63,329.63,392.00], [293.66], [329.63,392.00], [293.66],
+      [220.00,261.63,329.63], [261.63], [293.66,349.23], [329.63],
+      [174.61,261.63,349.23], [293.66], [261.63,329.63], [220.00],
+      [196.00,246.94,293.66], [246.94], [293.66,392.00], [329.63]
+    ];
+    function playTone(freq, when, duration=1.2) {
+      const gain=context.createGain();
+      const osc=context.createOscillator();
+      const overtone=context.createOscillator();
+      osc.type="sine"; osc.frequency.setValueAtTime(freq,when);
+      overtone.type="sine"; overtone.frequency.setValueAtTime(freq*2,when);
+      const mix=context.createGain(); mix.gain.value=.15;
+      overtone.connect(mix); mix.connect(gain);
+      osc.connect(gain); gain.connect(master);
+      gain.gain.setValueAtTime(.0001,when);
+      gain.gain.exponentialRampToValueAtTime(.1,when+.018);
+      gain.gain.exponentialRampToValueAtTime(.035,when+.17);
+      gain.gain.exponentialRampToValueAtTime(.0001,when+duration);
+      osc.start(when); overtone.start(when);
+      osc.stop(when+duration+.03); overtone.stop(when+duration+.03);
+    }
+    function playBar() {
+      const when=context.currentTime+.03;
+      const chord=notes[step%notes.length];
+      chord.forEach((freq,i)=>playTone(freq,when+i*.06,1.15));
+      step++;
+    }
+    musicBtn.addEventListener("click", async () => {
+      try {
+        if (!playing) {
+          const AudioContextClass=window.AudioContext||window.webkitAudioContext;
+          if (!AudioContextClass) throw new Error("Audio not supported");
+          if (!context) {
+            context=new AudioContextClass();
+            master=context.createGain();
+            master.gain.value=.38;
+            master.connect(context.destination);
+          }
+          await context.resume();
+          playing=true;
+          playBar();
+          timer=setInterval(playBar,720);
+          musicBtn.textContent="♫ PIANO ON";
+          musicBtn.setAttribute("aria-pressed","true");
+        } else {
+          playing=false;
+          clearInterval(timer);
+          if (context) await context.suspend();
+          musicBtn.textContent="♫ PIANO OFF";
+          musicBtn.setAttribute("aria-pressed","false");
+        }
+      } catch (error) {
+        musicBtn.textContent="PIANO INDISPONIBLE";
+        musicBtn.setAttribute("aria-pressed","false");
+        playing=false;
+        clearInterval(timer);
+      }
+    });
+    document.addEventListener("visibilitychange",()=>{
+      if(document.hidden && playing) {
+        clearInterval(timer);
+        playing=false;
+        if(context) context.suspend();
+        musicBtn.textContent="♫ PIANO OFF";
+        musicBtn.setAttribute("aria-pressed","false");
+      }
+    });
+  </script>
+</body>
+</html>
